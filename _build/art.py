@@ -74,12 +74,9 @@ def sticker(name, style):
     return f'<div class="sticker" style="{style}" aria-hidden="true">{STICKERS[name]}</div>'
 
 HERO_STICKERS = "".join([
-    sticker("browser", "top:0%;left:-2%;--rot:-6deg;--dy:-180px;--spin:-20deg;--d:0s"),
-    sticker("palette", "top:0%;right:4%;--rot:10deg;--dy:-140px;--spin:40deg;--d:.6s"),
-    sticker("phone",   "top:2%;right:30%;--rot:8deg;--dy:-220px;--spin:18deg;--d:1.2s"),
-    sticker("pen",     "top:24%;left:4%;--rot:-4deg;--dy:-120px;--spin:-12deg;--d:1.8s"),
-    sticker("cursor",  "top:22%;right:16%;--rot:-10deg;--dy:-260px;--spin:-30deg;--d:.9s"),
-    sticker("star",    "top:52%;left:2%;--rot:0deg;--dy:-160px;--spin:90deg;--d:2.1s"),
+    sticker("palette", "top:-7%;left:-5%;--rot:-10deg;--dy:-160px;--spin:-40deg;--d:0s"),
+    sticker("star",    "top:-6%;right:-3%;--rot:8deg;--dy:-200px;--spin:90deg;--d:.7s"),
+    sticker("cursor",  "bottom:-4%;right:4%;--rot:-12deg;--dy:-240px;--spin:-30deg;--d:1.3s"),
 ])
 
 # Service card art

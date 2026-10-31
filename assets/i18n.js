@@ -19,6 +19,7 @@ window.WDC_I18N = {
 "as.1": "Muestra gratis",
 "as.2": "Sin pago mensual",
 "as.3": "Es tuyo",
+"home.shot.cap": "Diseños de ejemplo · no son negocios reales",
 "home.what.k": "Lo que hago",
 "home.what.h": "Diseño web <em>y</em> diseño gráfico, hecho para pequeños negocios",
 "home.what.p": "Todo lo que necesitas para verte bien, que te encuentren y te llamen, de una sola persona a quien sí puedes contactar.",
