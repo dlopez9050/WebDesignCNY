@@ -250,9 +250,12 @@ def home():
           <li><i></i><span {tk("as.3","You own it","Es tuyo")}>You own it</span></li>
         </ul>
       </div>
-      <div class="scene" id="scene">
+      <div class="scene showcase" id="scene">
+        <figure class="shot">
+          <img src="assets/showcase-960.webp" srcset="assets/showcase-960.webp 960w, assets/showcase.webp 1536w" sizes="(max-width: 1040px) 100vw, 640px" width="1536" height="1024" alt="Illustration of a Web Design CNY storefront at dusk, with giant phone screens showing example websites for a barbershop, deli, landscaper, auto shop, cleaning service and home improvement company" fetchpriority="high">
+          <figcaption {tk("home.shot.cap","Example designs · not real businesses","Diseños de ejemplo · no son negocios reales")}>Example designs · not real businesses</figcaption>
+        </figure>
         {HERO_STICKERS}
-        {STREET}
       </div>
     </div>
   </section>
