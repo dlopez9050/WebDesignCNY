@@ -3,394 +3,254 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Web Design CNY · Websites for small businesses in Utica, NY</title>
-<meta name="description" content="Web Design CNY: web design and small business help in Utica and Central New York. Free sample first, $200 flat, no monthly fee.">
+<title>Web Design CNY · Friendly websites for small businesses in Utica, NY</title>
+<meta name="description" content="Friendly, affordable websites and graphic design for small shops and side hustles in Utica and Central New York. Free sample first, flat prices, no monthly fee.">
 <link rel="canonical" href="https://webdesigncny.com/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Web Design CNY">
 <meta property="og:url" content="https://webdesigncny.com/">
-<meta property="og:title" content="Web Design CNY">
-<meta property="og:description" content="Simple websites for small shops in Utica and Central New York. Free sample first, $200 flat, no monthly fee.">
-<meta name="theme-color" content="#0F5C63">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23102326'/%3E%3Crect x='16' width='16' height='32' rx='0' fill='%23F2C230'/%3E%3Ctext x='8.5' y='22' font-family='Arial' font-weight='900' font-size='16' fill='%23F3F6F5' text-anchor='middle'%3EW%3C/text%3E%3Ctext x='24' y='22' font-family='Arial' font-weight='900' font-size='16' fill='%231A1503' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
-<style>
-/* Layout: storefront-sign header, hero with a phone showing a sample site, then a printed work-order ticket for pricing */
-:root{
-  --paper:#F3F6F5;      /* cool off-white ground */
-  --card:#FFFFFF;
-  --ink:#102326;        /* text */
-  --muted:#4A5C5E;
-  --line:#CBD6D5;
-  --canal:#0F5C63;      /* primary */
-  --canal-ink:#FFFFFF;
-  --sign:#F2C230;       /* storefront-sign yellow, used sparingly */
-  --sign-ink:#1A1503;
-  --ticket:#FFFDF6;
-  --display:"Archivo", "Arial Narrow", Arial, sans-serif;
-  --body:"Source Sans 3", "Segoe UI", Arial, sans-serif;
-  --mono:"IBM Plex Mono", ui-monospace, "Courier New", monospace;
-  color-scheme:light;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#0D191B; --card:#142427; --ink:#E6EFEE; --muted:#A3B5B6; --line:#2A3D40;
-    --canal:#5FB3BA; --canal-ink:#06191B; --sign:#F2C230; --sign-ink:#1A1503; --ticket:#1A2A2D;
-    color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#0D191B; --card:#142427; --ink:#E6EFEE; --muted:#A3B5B6; --line:#2A3D40;
-  --canal:#5FB3BA; --canal-ink:#06191B; --sign:#F2C230; --sign-ink:#1A1503; --ticket:#1A2A2D;
-  color-scheme:dark;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55}
-img{max-width:100%}
-a{color:var(--canal)}
-a:focus-visible,.btn:focus-visible{outline:3px solid var(--sign);outline-offset:3px}
-.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
-h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.05}
-h2{font-size:clamp(30px,4.2vw,44px);font-weight:850;font-stretch:88%;letter-spacing:-0.01em}
-h3{font-size:21px;font-weight:750;font-stretch:95%}
-p{margin:0;text-wrap:pretty}
-.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:6px;font-weight:700;font-size:17px;text-decoration:none;border:2px solid var(--canal)}
-.btn-primary{background:var(--canal);color:var(--canal-ink)}
-.btn-ghost{color:var(--canal);background:transparent}
-section{padding-block:72px}
-
-/* header */
-.top{border-bottom:1px solid var(--line);background:var(--paper)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:16px}
-.mark{display:inline-flex;align-items:stretch;text-decoration:none;font-family:var(--display);font-weight:900;font-stretch:72%;font-size:26px;letter-spacing:0.02em;line-height:1}
-.mark span{padding:8px 10px}
-.mark .a{background:var(--ink);color:var(--paper)}
-.mark .b{background:var(--sign);color:var(--sign-ink)}
-.nav{display:flex;gap:22px;flex-wrap:wrap;font-weight:600;font-size:16px}
-.nav a{color:var(--ink);text-decoration:none}
-.nav a:hover{color:var(--canal);text-decoration:underline}
-
-/* hero */
-.hero{padding-block:64px 56px}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,0.75fr);gap:48px;align-items:center}
-.hero h1{font-size:clamp(42px,6.4vw,76px);font-weight:900;font-stretch:78%;letter-spacing:-0.015em;line-height:0.98}
-.hero h1 em{font-style:normal;background:var(--sign);color:var(--sign-ink);padding:0 0.12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.hero-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
-.hero-copy .lede{font-size:20px;color:var(--muted);max-width:34em}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-
-/* phone mockup */
-.phone{justify-self:center;width:100%;max-width:290px;aspect-ratio:9/18;border:10px solid var(--ink);border-radius:36px;background:var(--card);overflow:hidden;display:flex;flex-direction:column;position:relative}
-.phone .tag{position:absolute;top:10px;right:10px;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;background:var(--sign);color:var(--sign-ink);padding:3px 7px;border-radius:3px}
-.p-nav{background:var(--canal);color:var(--canal-ink);padding:26px 16px 12px;font-family:var(--display);font-weight:800;font-stretch:85%;font-size:19px}
-.p-hero{padding:16px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)}
-.p-hero strong{font-family:var(--display);font-size:24px;font-weight:850;font-stretch:85%;line-height:1.05}
-.p-hero small{font-size:13px;color:var(--muted);line-height:1.35}
-.p-btn{background:var(--canal);color:var(--canal-ink);border-radius:6px;text-align:center;font-weight:700;font-size:14px;padding:9px}
-.p-photo{margin:12px 16px 0;height:84px;border:2px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted)}
-.p-hours{padding:12px 16px;font-size:13px;display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-variant-numeric:tabular-nums}
-.p-hours b{font-weight:700}
-
-/* promise strip */
-.strip{background:var(--ink);color:var(--paper)}
-.strip .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;padding-block:22px}
-.strip div{font-family:var(--display);font-weight:800;font-stretch:85%;font-size:21px;line-height:1.15}
-.strip small{display:block;font-family:var(--body);font-weight:400;font-size:15px;opacity:0.85;margin-top:4px}
-
-/* steps */
-.head{display:flex;flex-direction:column;gap:12px;margin-bottom:36px;max-width:40em}
-.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:0;counter-reset:s}
-.steps li{display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:3px solid var(--ink);min-width:0}
-.steps li::before{counter-increment:s;content:"Step " counter(s);font-family:var(--mono);font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--canal);font-weight:600}
-.steps p{color:var(--muted);font-size:17px}
-
-/* pricing */
-.price{background:var(--card);border-block:1px solid var(--line)}
-.price .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
-.incl{display:flex;flex-direction:column;gap:22px;min-width:0}
-.incl ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
-.incl li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
-.incl svg{margin-top:4px;color:var(--canal)}
-.ticket{background:var(--ticket);border:1px solid var(--line);font-family:var(--mono);font-size:15px;padding:28px 26px 22px;position:relative;min-width:0;box-shadow:0 1px 0 var(--line),0 14px 30px -18px rgba(16,35,38,0.35)}
-.ticket::before,.ticket::after{content:"";position:absolute;left:0;right:0;height:10px;background:radial-gradient(circle at 7px 0,var(--card) 6px,transparent 6.5px) repeat-x;background-size:14px 10px}
-.ticket::before{top:-1px}
-.ticket::after{bottom:-1px;transform:rotate(180deg)}
-.t-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px dashed var(--muted);padding-bottom:12px;margin-bottom:12px;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
-.t-head b{color:var(--ink);font-weight:600}
-.t-row{display:flex;align-items:baseline;gap:8px;padding:6px 0}
-.t-row .lbl{min-width:0}
-.t-row .dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:16px}
-.t-row .amt{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
-.t-row .note{display:block;font-size:12.5px;color:var(--muted)}
-.t-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:2px solid var(--ink);margin-top:10px;padding-top:12px}
-.t-total .big{font-family:var(--display);font-size:40px;font-weight:900;font-stretch:80%}
-.t-foot{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.5}
-
-/* more help */
-.help-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-.help{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.help p{color:var(--muted);font-size:16.5px}
-.help .ask{margin-top:auto;font-family:var(--mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--canal);font-weight:600;padding-top:8px;text-decoration:none}
-.help .ask:hover{text-decoration:underline}
-.rates{margin:4px 0 0;display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-family:var(--mono);font-size:14px;border-top:1px dashed var(--line);padding-top:10px}
-.rates dt{margin:0;color:var(--ink)}
-.rates dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
-
-/* packages */
-.pk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:start}
-.pk::before,.pk::after{background:radial-gradient(circle at 7px 0,var(--paper) 6px,transparent 6.5px) repeat-x;background-size:14px 10px}
-.pk .who{font-family:var(--body);font-size:16px;color:var(--muted);margin:0 0 10px;line-height:1.45}
-.pk h3{font-family:var(--display);font-size:26px;font-weight:900;font-stretch:85%;margin:0 0 4px;color:var(--ink)}
-.pk .was{text-decoration:line-through;color:var(--muted);font-weight:400}
-
-/* about */
-.about .wrap{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:48px;align-items:start}
-.about p{font-size:19px;max-width:34em}
-.stack{display:flex;flex-direction:column;gap:16px}
-
-/* faq */
-.faq{border-top:1px solid var(--line)}
-.qs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px}
-.qs div{display:flex;flex-direction:column;gap:6px;min-width:0}
-.qs h3{font-size:19px}
-.qs p{color:var(--muted);font-size:17px}
-
-/* contact */
-.contact{background:var(--canal);color:var(--canal-ink)}
-.contact .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:40px;align-items:center}
-.contact h2{color:var(--canal-ink)}
-.contact p{font-size:19px;opacity:0.92;max-width:30em}
-.card-c{background:var(--paper);color:var(--ink);border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.card-c .row{display:flex;flex-direction:column;gap:2px}
-.card-c .k{font-family:var(--mono);font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
-.card-c .v{font-family:var(--display);font-weight:800;font-stretch:90%;font-size:24px;overflow-wrap:anywhere;color:var(--ink)}
-.card-c a.v{color:var(--canal);text-decoration:underline;text-underline-offset:3px}
-footer{padding-block:28px;font-size:15px;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-
-@media (max-width:900px){
-  .hero .wrap,.price .wrap,.about .wrap,.contact .wrap{grid-template-columns:minmax(0,1fr)}
-  .steps,.help-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .pk-grid{grid-template-columns:minmax(0,1fr)}
-  .strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .phone{max-width:260px}
-}
-@media (max-width:560px){
-  body{font-size:17px}
-  section{padding-block:52px}
-  .steps,.help-grid,.qs{grid-template-columns:minmax(0,1fr)}
-  .nav{gap:14px;font-size:15px}
-  .ticket{padding:24px 16px 18px;font-size:14px}
-}
-@media (prefers-reduced-motion:no-preference){
-  .btn{transition:transform .15s ease}
-  .btn:hover{transform:translateY(-1px)}
-}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-}
-</style>
+<meta property="og:title" content="Web Design CNY · Friendly websites for small businesses in Utica, NY">
+<meta property="og:description" content="Friendly, affordable websites and graphic design for small shops and side hustles in Utica and Central New York. Free sample first, flat prices, no monthly fee.">
+<meta property="og:image" content="https://webdesigncny.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFC23D">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Nunito:wght@400;600;700;800&family=Caveat:wght@700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://webdesigncny.com/#business", "name": "Web Design CNY", "url": "https://webdesigncny.com/", "email": "david@webdesigncny.com", "image": "https://webdesigncny.com/og-image.png", "logo": "https://webdesigncny.com/apple-touch-icon.png", "description": "Friendly, affordable websites and graphic design for small shops and side hustles in Utica and Central New York. Free sample first, flat prices, no monthly fee.", "priceRange": "$100-$300", "address": {"@type": "PostalAddress", "addressLocality": "Utica", "addressRegion": "NY", "addressCountry": "US"}, "areaServed": [{"@type": "City", "name": "Utica, NY"}, {"@type": "City", "name": "Rome, NY"}, {"@type": "City", "name": "New Hartford, NY"}, {"@type": "City", "name": "Whitesboro, NY"}, {"@type": "City", "name": "Yorkville, NY"}, {"@type": "City", "name": "New York Mills, NY"}, {"@type": "AdministrativeArea", "name": "Oneida County, NY"}, {"@type": "AdministrativeArea", "name": "Central New York"}], "knowsLanguage": ["en", "es"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Websites and small business design", "itemListElement": [{"@type": "Offer", "name": "Small business website", "price": "200", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Hustler package: one-page site, Google profile, business card and flyer design", "price": "150", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Entrepreneur package: website, Google listing cleanup, review QR card, flyer and business card design", "price": "300", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Flyer design", "price": "30", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Business card design", "price": "25", "priceCurrency": "USD"}]}}</script>
 </head>
 <body>
-
+<a class="skip" href="#main" data-i18n="c.skip">Skip to content</a>
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="#top" aria-label="Web Design CNY, home"><span class="a">WEB DESIGN</span><span class="b">CNY</span></a>
-    <nav class="nav" aria-label="Main">
-      <a href="#how">How it works</a>
-      <a href="#price">Price</a>
-      <a href="#packages">Packages</a>
-      <a href="#help">More help</a>
-      <a href="#contact">Contact</a>
+    <a class="logo" href="./" aria-label="Web Design CNY, home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="12" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M6 17h36l-2 6H8z" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2" stroke-linejoin="round"/><path d="M8 23c2 3 6 3 8 0 2 3 6 3 8 0 2 3 6 3 8 0 2 3 6 3 8 0" fill="#fff" stroke="#1D1A33" stroke-width="2.2" stroke-linejoin="round"/><rect x="11" y="28" width="26" height="13" rx="2.5" fill="#fff" stroke="#1D1A33" stroke-width="2.2"/><path d="M15 34.5h9M15 37.5h6" stroke="#0E8A7E" stroke-width="2.2" stroke-linecap="round"/><circle cx="31" cy="35" r="2.6" fill="#EE5236"/><path d="M14 11h20" stroke="#1D1A33" stroke-width="2.4" stroke-linecap="round"/></svg><span class="w"><b>Web Design CNY</b><small data-i18n="c.tag">your neighborhood web guy</small></span></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a class="txt" href="./" aria-current="page" data-i18n="n.home">Home</a>
+      <a class="txt" href="services.html" data-i18n="n.services">Services &amp; prices</a>
+      <a class="txt" href="about.html" data-i18n="n.about">About</a>
+      <a class="txt" href="contact.html" data-i18n="n.contact">Contact</a>
     </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language / Idioma"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18" fill="none" stroke="currentColor" stroke-width="2"/></svg><span class="lname">English</span></button>
+      <div class="lang-menu" role="menu"></div>
+    </div>
+    <a class="btn btn-red hdr-cta" href="contact.html" data-i18n="c.hdrcta">Free sample</a>
+    <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button>
   </div>
 </header>
+<main id="main">
 
-<main id="top">
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <div class="eyebrow">Web design &amp; small business help · Utica and Central New York</div>
-        <h1>Your shop deserves a <em>real website.</em></h1>
-        <p class="lede">I'm David, from West Utica. I build simple websites that work on phones, for delis, barbers, salons, auto shops and contractors. I'll make you a free sample first, so you see it before you spend a dollar.</p>
+        <span class="hand-note" data-i18n="home.hand">Hey neighbor!</span>
+        <h1 data-i18n="home.h1">Your shop deserves a <span class="accent">real website.</span></h1>
+        <p class="lede" data-i18n="home.lede">I'm David, from West Utica. I design bright, simple websites, flyers and cards for the delis, barbers, salons, auto shops and side hustles that make this town great. I'll make you a free sample first, so you see it before you spend a dollar.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="#contact">Get a free sample</a>
-          <a class="btn btn-ghost" href="#price">See the price</a>
+          <a class="btn btn-red" href="contact.html"><span data-i18n="c.cta">Get my free sample</span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn" href="services.html" data-i18n="home.seeprices">See prices</a>
         </div>
+        <ul class="assure">
+          <li><i></i><span data-i18n="as.1">Free sample</span></li>
+          <li><i></i><span data-i18n="as.2">No monthly fee</span></li>
+          <li><i></i><span data-i18n="as.3">You own it</span></li>
+        </ul>
       </div>
-      <div class="phone" role="img" aria-label="Example of a small business website on a phone, showing a deli's name, a call button, a photo spot and opening hours">
-        <div class="tag">Sample</div>
-        <div class="p-nav">Your Deli Here</div>
-        <div class="p-hero">
-          <strong>Hot subs, pizza &amp; groceries</strong>
-          <small>Your corner deli. Order ahead or stop by.</small>
-          <div class="p-btn">Call to order</div>
+      <div class="scene" id="scene">
+        <div class="sticker" style="top:0%;left:-2%;--rot:-6deg;--dy:-180px;--spin:-20deg;--d:0s" aria-hidden="true"><svg width="190" height="132" viewBox="0 0 190 132"><rect x="2" y="2" width="186" height="128" rx="14" fill="#fff" stroke="#1D1A33" stroke-width="3"/><path d="M2 28h186" stroke="#1D1A33" stroke-width="3"/><circle cx="18" cy="15" r="5" fill="#EE5236"/><circle cx="34" cy="15" r="5" fill="#FFC23D"/><circle cx="50" cy="15" r="5" fill="#0E8A7E"/><rect x="16" y="42" width="96" height="14" rx="7" fill="#1D1A33"/><rect x="16" y="64" width="70" height="9" rx="4.5" fill="#C9C3DD"/><rect x="16" y="80" width="84" height="9" rx="4.5" fill="#C9C3DD"/><rect x="16" y="100" width="62" height="20" rx="10" fill="#EE5236"/><rect x="124" y="42" width="50" height="78" rx="8" fill="#9ED8F2" stroke="#1D1A33" stroke-width="2.5"/><circle cx="149" cy="70" r="11" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M124 108l18-16 14 12 18-14v28h-50z" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5" stroke-linejoin="round"/></svg></div><div class="sticker" style="top:0%;right:4%;--rot:10deg;--dy:-140px;--spin:40deg;--d:.6s" aria-hidden="true"><svg width="118" height="118" viewBox="0 0 118 118"><path d="M59 4C28 4 4 27 4 56c0 27 20 44 38 44 10 0 12-8 9-14-4-8 1-15 10-15h18c20 0 35-12 35-31C114 20 90 4 59 4z" fill="#FFFDF8" stroke="#1D1A33" stroke-width="3"/><circle cx="34" cy="40" r="10" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><circle cx="60" cy="26" r="10" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><circle cx="86" cy="36" r="10" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><circle cx="30" cy="70" r="10" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/></svg></div><div class="sticker" style="top:2%;right:30%;--rot:8deg;--dy:-220px;--spin:18deg;--d:1.2s" aria-hidden="true"><svg width="92" height="160" viewBox="0 0 92 160"><rect x="3" y="3" width="86" height="154" rx="16" fill="#1D1A33"/><rect x="10" y="14" width="72" height="132" rx="9" fill="#fff"/><rect x="18" y="26" width="44" height="9" rx="4.5" fill="#1D1A33"/><rect x="18" y="42" width="56" height="34" rx="6" fill="#FFD9CF"/><rect x="18" y="84" width="40" height="6" rx="3" fill="#C9C3DD"/><rect x="18" y="95" width="50" height="6" rx="3" fill="#C9C3DD"/><rect x="18" y="114" width="56" height="20" rx="10" fill="#0E8A7E"/><path d="M38 124h16" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></div><div class="sticker" style="top:24%;left:4%;--rot:-4deg;--dy:-120px;--spin:-12deg;--d:1.8s" aria-hidden="true"><svg width="150" height="96" viewBox="0 0 150 96"><path d="M10 80C40 10 100 10 140 60" fill="none" stroke="#1D1A33" stroke-width="3.5" stroke-linecap="round"/><path d="M10 80L52 18M140 60L104 8" stroke="#6D4AA8" stroke-width="2" stroke-dasharray="4 4"/><rect x="2" y="72" width="16" height="16" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><rect x="132" y="52" width="16" height="16" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><circle cx="52" cy="18" r="7" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><circle cx="104" cy="8" r="6" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/></svg></div><div class="sticker" style="top:22%;right:16%;--rot:-10deg;--dy:-260px;--spin:-30deg;--d:.9s" aria-hidden="true"><svg width="56" height="64" viewBox="0 0 56 64"><path d="M6 4l42 26-18 4 10 20-9 5-10-20-15 12z" fill="#EE5236" stroke="#1D1A33" stroke-width="3" stroke-linejoin="round"/></svg></div><div class="sticker" style="top:52%;left:2%;--rot:0deg;--dy:-160px;--spin:90deg;--d:2.1s" aria-hidden="true"><svg width="58" height="58" viewBox="0 0 58 58"><path d="M29 3l6 18 19 1-15 12 5 19-15-11-16 11 6-19L4 22l19-1z" fill="#FFC23D" stroke="#1D1A33" stroke-width="3" stroke-linejoin="round"/></svg></div>
+        <svg class="street" viewBox="0 0 600 420" role="img" aria-label="Illustration of a Utica main street with a deli, a barbershop, a salon and an auto shop"><circle cx="520" cy="48" r="34" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><rect x="14" y="60" width="136" height="300" fill="#FFD9CF" stroke="#1D1A33" stroke-width="2.5"/><rect x="8" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="32" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M53 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="90" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M111 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="10.0" y="168" width="24.0" height="34" fill="#EE5236"/><rect x="34.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="58.0" y="168" width="24.0" height="34" fill="#EE5236"/><rect x="82.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="106.0" y="168" width="24.0" height="34" fill="#EE5236"/><rect x="130.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><path d="M10.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><path d="M34.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M58.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><path d="M82.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M106.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><path d="M130.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><rect x="10" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="28" y="130" width="108" height="30" rx="6" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><text x="82.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#EE5236" letter-spacing="1">DELI</text><rect x="26" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M34 236l14 -0M34 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="102" y="226" width="36" height="134" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><rect x="108" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="131" cy="300" r="3" fill="#1D1A33"/><rect x="26" y="306" width="66" height="54" fill="#FFD9CF" stroke="#1D1A33" stroke-width="2.5"/><rect x="158" y="60" width="136" height="300" fill="#9ED8F2" stroke="#1D1A33" stroke-width="2.5"/><rect x="152" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="176" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M197 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="234" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M255 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="154.0" y="168" width="24.0" height="34" fill="#0E8A7E"/><rect x="178.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="202.0" y="168" width="24.0" height="34" fill="#0E8A7E"/><rect x="226.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="250.0" y="168" width="24.0" height="34" fill="#0E8A7E"/><rect x="274.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><path d="M154.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><path d="M178.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M202.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><path d="M226.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M250.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><path d="M274.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><rect x="154" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="172" y="130" width="108" height="30" rx="6" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><text x="226.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#FFC23D" letter-spacing="1">CUTS</text><rect x="170" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M178 236l14 -0M178 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="246" y="226" width="36" height="134" rx="4" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><rect x="252" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="275" cy="300" r="3" fill="#1D1A33"/><rect x="170" y="306" width="66" height="54" fill="#9ED8F2" stroke="#1D1A33" stroke-width="2.5"/><rect x="268" y="228" width="12" height="54" rx="6" fill="#fff" stroke="#1D1A33" stroke-width="2.2"/><path d="M268 236l12 -6M268 248l12 -6M268 260l12 -6M268 272l12 -6" stroke="#EE5236" stroke-width="3.5"/><rect x="302" y="60" width="136" height="300" fill="#C9EFD9" stroke="#1D1A33" stroke-width="2.5"/><rect x="296" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="320" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M341 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="378" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M399 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="298.0" y="168" width="24.0" height="34" fill="#6D4AA8"/><rect x="322.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="346.0" y="168" width="24.0" height="34" fill="#6D4AA8"/><rect x="370.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="394.0" y="168" width="24.0" height="34" fill="#6D4AA8"/><rect x="418.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><path d="M298.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><path d="M322.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M346.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><path d="M370.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M394.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><path d="M418.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><rect x="298" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="316" y="130" width="108" height="30" rx="6" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><text x="370.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#6D4AA8" letter-spacing="1">SALON</text><rect x="314" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M322 236l14 -0M322 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="390" y="226" width="36" height="134" rx="4" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><rect x="396" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="419" cy="300" r="3" fill="#1D1A33"/><rect x="314" y="306" width="66" height="54" fill="#C9EFD9" stroke="#1D1A33" stroke-width="2.5"/><rect x="446" y="60" width="136" height="300" fill="#FFE8A8" stroke="#1D1A33" stroke-width="2.5"/><rect x="440" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="464" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M485 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="522" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M543 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="442.0" y="168" width="24.0" height="34" fill="#FFC23D"/><rect x="466.0" y="168" width="24.0" height="34" fill="#1D1A33"/><rect x="490.0" y="168" width="24.0" height="34" fill="#FFC23D"/><rect x="514.0" y="168" width="24.0" height="34" fill="#1D1A33"/><rect x="538.0" y="168" width="24.0" height="34" fill="#FFC23D"/><rect x="562.0" y="168" width="24.0" height="34" fill="#1D1A33"/><path d="M442.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M466.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><path d="M490.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M514.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><path d="M538.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M562.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><rect x="442" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="460" y="130" width="108" height="30" rx="6" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><text x="514.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" letter-spacing="1">AUTO</text><rect x="458" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M466 236l14 -0M466 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="534" y="226" width="36" height="134" rx="4" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><rect x="540" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="563" cy="300" r="3" fill="#1D1A33"/><rect x="458" y="306" width="66" height="54" fill="#FFE8A8" stroke="#1D1A33" stroke-width="2.5"/><rect x="0" y="360" width="600" height="60" fill="#E8DCC6" stroke="#1D1A33" stroke-width="2.5"/><path d="M0 384h600" stroke="#1D1A33" stroke-width="2" stroke-dasharray="2 28"/><rect x="112" y="336" width="28" height="24" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2"/><circle cx="120" cy="330" r="10" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><circle cx="133" cy="327" r="12" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><rect x="256" y="336" width="28" height="24" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2"/><circle cx="264" cy="330" r="10" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><circle cx="277" cy="327" r="12" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><rect x="400" y="336" width="28" height="24" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2"/><circle cx="408" cy="330" r="10" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><circle cx="421" cy="327" r="12" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Hello in many of the languages spoken in Utica"><div class="track"><span lang="und">Hello</span><span lang="und">Hola</span><span lang="und">Ciao</span><span lang="und">Zdravo</span><span lang="und">Cześć</span><span lang="und">Привіт</span><span lang="und">مرحبا</span><span lang="und">Xin chào</span><span lang="und">नमस्ते</span><span lang="und">မင်္ဂလာပါ</span><span lang="und">Bonjour</span><span lang="und">Jambo</span><span lang="und">Hello</span><span lang="und">Hola</span><span lang="und">Ciao</span><span lang="und">Zdravo</span><span lang="und">Cześć</span><span lang="und">Привіт</span><span lang="und">مرحبا</span><span lang="und">Xin chào</span><span lang="und">नमस्ते</span><span lang="und">မင်္ဂလာပါ</span><span lang="und">Bonjour</span><span lang="und">Jambo</span></div></div>
+
+  <section>
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="kicker" data-i18n="home.what.k">What I do</span>
+        <h2 data-i18n="home.what.h">Web design <em>and</em> graphic design, made for small shops</h2>
+        <p data-i18n="home.what.p">Everything you need to look good, get found and get called, from one person you can actually reach.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc reveal" style="--rd:0s">
+          <div class="art"><svg viewBox="0 0 240 130" width="100%" height="100%" aria-hidden="true"><rect width="240" height="130" fill="#DDF2FB"/><rect x="34" y="18" width="150" height="100" rx="10" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><path d="M34 36h150" stroke="#1D1A33" stroke-width="2.5"/><circle cx="46" cy="27" r="3.5" fill="#EE5236"/><circle cx="57" cy="27" r="3.5" fill="#FFC23D"/><circle cx="68" cy="27" r="3.5" fill="#0E8A7E"/><rect x="46" y="48" width="70" height="10" rx="5" fill="#1D1A33"/><rect x="46" y="64" width="54" height="6" rx="3" fill="#C9C3DD"/><rect x="46" y="94" width="44" height="14" rx="7" fill="#EE5236"/><rect x="126" y="48" width="46" height="58" rx="6" fill="#FFC23D" stroke="#1D1A33" stroke-width="2"/><rect x="168" y="50" width="40" height="72" rx="9" fill="#1D1A33"/><rect x="173" y="58" width="30" height="56" rx="4" fill="#fff"/><rect x="177" y="98" width="22" height="9" rx="4.5" fill="#0E8A7E"/></svg></div>
+          <h3 data-i18n="svc.web.h">Websites</h3>
+          <p data-i18n="svc.web.p">A bright, simple site that works great on phones, with your hours, menu or services, photos and a call button.</p>
+          <div class="from"><span data-i18n="svc.web.f">From $100</span><a href="services.html" data-i18n="home.svc.more">See prices</a></div>
         </div>
-        <div class="p-photo">Your food photo</div>
-        <div class="p-hours">
-          <b>Mon–Fri</b><span>8:00 AM – 10:00 PM</span>
-          <b>Sat</b><span>9:00 AM – 10:00 PM</span>
-          <b>Sun</b><span>9:00 AM – 8:00 PM</span>
+        <div class="svc reveal" style="--rd:0.12s">
+          <div class="art"><svg viewBox="0 0 240 130" width="100%" height="100%" aria-hidden="true"><rect width="240" height="130" fill="#FFE8A8"/><g transform="rotate(-8 80 70)"><rect x="40" y="16" width="80" height="104" rx="6" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><rect x="50" y="26" width="60" height="34" rx="4" fill="#EE5236"/><rect x="50" y="68" width="48" height="7" rx="3.5" fill="#1D1A33"/><rect x="50" y="80" width="56" height="5" rx="2.5" fill="#C9C3DD"/><path d="M50 106h60" stroke="#1D1A33" stroke-width="2" stroke-dasharray="3 5"/></g><g transform="rotate(6 170 80)"><rect x="128" y="52" width="88" height="54" rx="6" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><rect x="138" y="62" width="40" height="8" rx="4" fill="#fff"/><rect x="138" y="76" width="30" height="5" rx="2.5" fill="#C9EFD9"/><rect x="190" y="62" width="18" height="18" rx="2" fill="#fff"/></g></svg></div>
+          <h3 data-i18n="svc.print.h">Flyers &amp; cards</h3>
+          <p data-i18n="svc.print.p">Flyers, business cards and review QR cards that match your site, sent as print-ready files.</p>
+          <div class="from"><span data-i18n="svc.print.f">From $25</span><a href="services.html" data-i18n="home.svc.more">See prices</a></div>
+        </div>
+        <div class="svc reveal" style="--rd:0.24s">
+          <div class="art"><svg viewBox="0 0 240 130" width="100%" height="100%" aria-hidden="true"><rect width="240" height="130" fill="#C9EFD9"/><path d="M0 92h240M70 0v130M170 0v130" stroke="#fff" stroke-width="10"/><path d="M0 40 L240 70" stroke="#fff" stroke-width="7"/><path d="M120 16c-17 0-30 13-30 29 0 22 30 52 30 52s30-30 30-52c0-16-13-29-30-29z" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><circle cx="120" cy="45" r="11" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><rect x="150" y="80" width="78" height="34" rx="17" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><path d="M164 97l6 6 12-12" stroke="#0E8A7E" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="188" y="92" width="30" height="9" rx="4.5" fill="#1D1A33"/></svg></div>
+          <h3 data-i18n="svc.google.h">Get found on Google</h3>
+          <p data-i18n="svc.google.p">Your Google listing set up or cleaned up: right hours, photos, categories and a website button.</p>
+          <div class="from"><span data-i18n="svc.google.f">From $50</span><a href="services.html" data-i18n="home.svc.more">See prices</a></div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="strip">
-    <div class="wrap">
-      <div>Free sample first<small>See it before you decide.</small></div>
-      <div>$200, one time<small>One flat price for a small site.</small></div>
-      <div>No monthly fee<small>Hosting is included.</small></div>
-      <div>You own it<small>The web address is in your name.</small></div>
-    </div>
-  </div>
-
-  <section id="how">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">How it works</div>
-        <h2>From sample to live in about a week</h2>
+  <section class="band-sky edge-top edge-bot">
+    <div class="wrap demo-wrap">
+      <div class="stack reveal">
+        <span class="kicker" data-i18n="home.demo.k">Try it</span>
+        <h2 data-i18n="home.demo.h">What would <span class="hl">your</span> site look like?</h2>
+        <p class="lede" data-i18n="home.demo.p">Tap a type of business. Your free sample uses your real name, hours, prices and photos.</p>
+        <div class="chips" role="group" aria-label="Business type"><button class="chip" type="button" data-kind="deli" aria-pressed="true" data-i18n="k.deli">Deli</button><button class="chip" type="button" data-kind="barber" aria-pressed="false" data-i18n="k.barber">Barbershop</button><button class="chip" type="button" data-kind="auto" aria-pressed="false" data-i18n="k.auto">Auto shop</button><button class="chip" type="button" data-kind="salon" aria-pressed="false" data-i18n="k.salon">Salon</button><button class="chip" type="button" data-kind="hustle" aria-pressed="false" data-i18n="k.hustle">Side hustle</button></div>
       </div>
-      <ol class="steps">
-        <li><h3>I make a free sample</h3><p>A homepage built from your Google listing: your name, hours, address and phone. Yours to keep looking at, no strings.</p></li>
-        <li><h3>You say yes</h3><p>Pay half ($100) to start. Send me your menu or services, prices and a few photos.</p></li>
-        <li><h3>You approve it</h3><p>I build the full site and show it to you. Tell me what to change until it looks right.</p></li>
-        <li><h3>It goes live</h3><p>It goes up on your own web address and gets linked from your Google listing. Pay the other $100.</p></li>
+      <div class="demo reveal" style="--rd:.15s"><div class="phone" id="phone" role="img" aria-label="Example small business website on a phone">
+          <div class="tag" data-i18n="k.tag">Example</div>
+          <div class="p-nav swap"><span data-f="name">Your Deli</span><i></i></div>
+          <div class="p-hero swap">
+            <strong data-f="head">Hot subs, pizza &amp; groceries</strong>
+            <small data-f="sub">Your corner deli. Order ahead or stop by.</small>
+            <div class="p-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg><span data-f="btn">Call to order</span></div>
+          </div>
+          <div class="p-photo swap" data-f="photo">Your food photo</div>
+          <div class="p-rows swap" data-f="rows"><b>Mon–Fri</b><span>8 AM – 10 PM</span><b>Sat</b><span>9 AM – 10 PM</span><b>Sun</b><span>9 AM – 8 PM</span></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap why-grid">
+      <div class="stack reveal">
+        <span class="kicker" data-i18n="why.k">Why it matters</span>
+        <h2 data-i18n="why.h">When someone searches "near me," who do they pick?</h2>
+        <p class="lede" data-i18n="why.p">New customers look you up on their phone before they walk in. If your listing has no website, they see less about you, and they often tap the shop next door instead.</p>
+        <ul class="ticks"><li data-i18n="why.t1">Your menu, prices and hours, right where people look</li><li data-i18n="why.t2">A website button on your Google listing</li><li data-i18n="why.t3">One link for your flyers, cards, Facebook and Instagram</li></ul>
+      </div>
+      <div class="serp reveal" style="--rd:.15s" role="img" aria-label="Illustration of two search results: one shop has a website, the other does not">
+        <div class="q"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2.4"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span data-i18n="serp.q">barbershop near me</span></div>
+        <div class="res good"><span class="flag" data-i18n="serp.g">With a website</span><div class="nm" data-i18n="serp.n1">Your Shop</div><div class="meta" data-i18n="serp.m1">Barbershop · Open until 7 PM · Prices on website</div><div class="acts"><span class="web" data-i18n="serp.web">Website</span><span data-i18n="serp.dir">Directions</span><span data-i18n="serp.call">Call</span></div></div>
+        <div class="res bad"><span class="flag" data-i18n="serp.b">Without</span><div class="nm" data-i18n="serp.n2">The shop down the street</div><div class="meta" data-i18n="serp.m2">Barbershop · Hours may differ</div><div class="acts"><span class="none" data-i18n="serp.none">No website</span><span data-i18n="serp.dir">Directions</span><span data-i18n="serp.call">Call</span></div></div>
+        <div class="note" data-i18n="serp.note">Illustration. Not real businesses.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-ink">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="kicker" data-i18n="how.k">How it works</span>
+        <h2 data-i18n="how.h">From free sample to live in about a week</h2>
+        <p data-i18n="how.p">You never pay for something you haven't seen.</p>
+      </div>
+      <ol class="steps" style="color:var(--ink)">
+        <li class="reveal"><h3 data-i18n="st.1h">I make a free sample</h3><p data-i18n="st.1p">A homepage built from your Google listing, usually within a couple of days.</p><span class="pay" data-i18n="st.1$">You pay: $0</span></li>
+        <li class="reveal" style="--rd:.1s"><h3 data-i18n="st.2h">You say yes</h3><p data-i18n="st.2p">Like it? Pay half to start, and send your menu or services, prices and a few phone photos.</p><span class="pay" data-i18n="st.2$">You pay: half</span></li>
+        <li class="reveal" style="--rd:.2s"><h3 data-i18n="st.3h">You approve it</h3><p data-i18n="st.3p">I build the full site and show you. We change things until it looks right.</p><span class="pay" data-i18n="st.3$">You pay: $0</span></li>
+        <li class="reveal" style="--rd:.3s"><h3 data-i18n="st.4h">It goes live</h3><p data-i18n="st.4p">It goes up on your own web address and gets linked from your Google listing.</p><span class="pay" data-i18n="st.4$">You pay: the other half</span></li>
       </ol>
     </div>
   </section>
 
-  <section class="price" id="price">
+  <section>
     <div class="wrap">
-      <div class="incl">
-        <div class="eyebrow">What you get</div>
-        <h2>Everything a customer looks for, in one place</h2>
-        <ul>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A site that looks right on phones, where most people will find you</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your hours, address, map and a button that calls you</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your menu, services or prices, and your own photos</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Links to the ordering, booking or social pages you already use</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>English and Spanish on the same site, if your customers need both</span></li>
-        </ul>
+      <div class="head center reveal">
+        <span class="kicker" data-i18n="pr.k">Simple prices</span>
+        <h2 data-i18n="pr.h">Pick what fits. Pay once.</h2>
+        <p data-i18n="pr.p">Half to start, half when you approve. No monthly fee.</p>
       </div>
-      <div class="ticket" aria-label="Price breakdown">
-        <div class="t-head"><span>Work order</span><b>Web Design CNY</b></div>
-        <div class="t-row"><span class="lbl">Small business website</span><span class="dots"></span><span class="amt">$200</span></div>
-        <div class="t-row"><span class="lbl">Works on phones</span><span class="dots"></span><span class="amt">incl.</span></div>
-        <div class="t-row"><span class="lbl">Hours, map &amp; call button</span><span class="dots"></span><span class="amt">incl.</span></div>
-        <div class="t-row"><span class="lbl">Linked from your Google listing</span><span class="dots"></span><span class="amt">incl.</span></div>
-        <div class="t-row"><span class="lbl">Hosting</span><span class="dots"></span><span class="amt">$0/mo</span></div>
-        <div class="t-row"><span class="lbl">Your web address<span class="note">Paid to the registrar, in your name</span></span><span class="dots"></span><span class="amt">~$10–20/yr</span></div>
-        <div class="t-total"><span>Total to me</span><span class="big">$200</span></div>
-        <div class="t-foot">Half to start, half when you approve the finished site. The free sample costs nothing.</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="packages">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Packages</div>
-        <h2>Get set up all at once and pay less</h2>
-        <p style="color:var(--muted)">One price, paid once: half to start, half when you approve. Printing isn't included; you pay the print shop directly. Your web address is about $10–20 a year, in your name.</p>
-      </div>
-      <div class="pk-grid">
-        <div class="ticket pk" aria-label="Hustler package">
-          <div class="t-head"><span>Package</span><b>Hustler</b></div>
-          <h3>Starting a side hustle?</h3>
-          <p class="who">For braiders, nail techs, cleaners, handymen, home bakers, tutors and anyone who's good at what they do and wants to look official.</p>
-          <div class="t-row"><span class="lbl">One-page "hire me" site<span class="note">Services, prices, photos and a text or book button</span></span><span class="dots"></span><span class="amt">$100</span></div>
-          <div class="t-row"><span class="lbl">Google profile setup<span class="note">Your home address stays hidden</span></span><span class="dots"></span><span class="amt">$50</span></div>
-          <div class="t-row"><span class="lbl">Business card design</span><span class="dots"></span><span class="amt">$25</span></div>
-          <div class="t-row"><span class="lbl">Flyer design</span><span class="dots"></span><span class="amt">$30</span></div>
-          <div class="t-total"><span>Package <span class="was">$205</span></span><span class="big">$150</span></div>
-          <div class="t-foot">You save $55. Designs come as print-ready files.</div>
+      <div class="plans">
+        <div class="plan  reveal">
+          <span class="tier" data-i18n="pl.h.tier">Hustler package</span>
+          <h3 data-i18n="pl.h.h">Starting a side hustle?</h3>
+          <div class="price"><b>$150</b><s>$205</s></div>
+          <p class="who" data-i18n="pl.h.who">For braiders, nail techs, cleaners, handymen, home bakers and tutors who want to look official.</p>
+          <ul><li><span><span data-i18n="pl.h.1">One-page "hire me" site</span><small data-i18n="pl.h.1.n">Services, prices, photos, text or book button</small></span><span>$100</span></li><li><span><span data-i18n="pl.h.2">Google profile setup</span><small data-i18n="pl.h.2.n">Your home address stays hidden</small></span><span>$50</span></li><li><span><span data-i18n="pl.h.3">Business card design</span></span><span>$25</span></li><li><span><span data-i18n="pl.h.4">Flyer design</span></span><span>$30</span></li></ul>
+          <span class="save" data-i18n="pl.h.save">You save $55</span>
+          <a class="btn " href="contact.html?plan=hustler" data-i18n="pl.h.btn">Choose Hustler</a>
         </div>
-        <div class="ticket pk" aria-label="Entrepreneur package">
-          <div class="t-head"><span>Package</span><b>Entrepreneur</b></div>
-          <h3>Running a shop?</h3>
-          <p class="who">For delis, cafes, barbershops, auto shops and corner stores that want new customers to find them, trust them and walk in.</p>
-          <div class="t-row"><span class="lbl">Small business website</span><span class="dots"></span><span class="amt">$200</span></div>
-          <div class="t-row"><span class="lbl">Google listing cleanup</span><span class="dots"></span><span class="amt">$75</span></div>
-          <div class="t-row"><span class="lbl">Review QR card design<span class="note">Counter card that asks for Google reviews</span></span><span class="dots"></span><span class="amt">$35</span></div>
-          <div class="t-row"><span class="lbl">Flyer + business card design</span><span class="dots"></span><span class="amt">$50</span></div>
-          <div class="t-total"><span>Package <span class="was">$360</span></span><span class="big">$300</span></div>
-          <div class="t-foot">You save $60. No monthly fee.</div>
+        <div class="plan  reveal">
+          <span class="tier" data-i18n="pl.w.tier">Website</span>
+          <h3 data-i18n="pl.w.h">Just the website</h3>
+          <div class="price"><b>$200</b></div>
+          <p class="who" data-i18n="pl.w.who">A full website for your shop, linked from your Google listing. Most shops start here.</p>
+          <ul><li><span><span data-i18n="pl.w.1">Works great on phones</span></span><span>✓</span></li><li><span><span data-i18n="pl.w.2">Hours, map &amp; call button</span></span><span>✓</span></li><li><span><span data-i18n="pl.w.3">Menu, services or prices</span></span><span>✓</span></li><li><span><span data-i18n="pl.w.4">Linked from your Google listing</span></span><span>✓</span></li><li><span><span data-i18n="pl.w.5">Hosting</span></span><span>$0/mo</span></li></ul>
+          <span class="save" data-i18n="pl.w.save">Small fixes free for the first month</span>
+          <a class="btn " href="contact.html?plan=website" data-i18n="pl.w.btn">Choose website</a>
+        </div>
+        <div class="plan star reveal"><span class="ribbon" data-i18n="pl.rib">Best value for shops</span>
+          <span class="tier" data-i18n="pl.e.tier">Entrepreneur package</span>
+          <h3 data-i18n="pl.e.h">Running a shop?</h3>
+          <div class="price"><b>$300</b><s>$360</s></div>
+          <p class="who" data-i18n="pl.e.who">For delis, cafes, barbershops, auto shops and corner stores that want to be found, trusted and visited.</p>
+          <ul><li><span><span data-i18n="pl.e.1">Small business website</span></span><span>$200</span></li><li><span><span data-i18n="pl.e.2">Google listing cleanup</span></span><span>$75</span></li><li><span><span data-i18n="pl.e.3">Review QR card design</span><small data-i18n="pl.e.3.n">Counter card that asks for Google reviews</small></span><span>$35</span></li><li><span><span data-i18n="pl.e.4">Flyer + business card design</span></span><span>$50</span></li></ul>
+          <span class="save" data-i18n="pl.e.save">You save $60</span>
+          <a class="btn btn-red" href="contact.html?plan=entrepreneur" data-i18n="pl.e.btn">Choose Entrepreneur</a>
         </div>
       </div>
-      <p style="margin-top:28px"><a class="btn btn-primary" href="#contact">Ask about a package</a></p>
+      <p class="plan-note" style="text-align:center;margin-inline:auto"><a href="services.html" data-i18n="pr.more">Build your own, add-ons and questions →</a></p>
     </div>
   </section>
 
-  <section id="help">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Small business solutions</div>
-        <h2>More ways I can help</h2>
-        <p style="color:var(--muted)">Small jobs that help customers find you and pick you. Printing isn't included; you pay the print shop directly. For anything without a price here, I'll tell you the price first.</p>
-      </div>
-      <div class="help-grid">
-        <div class="help"><h3>Google listing cleanup</h3><p>Correct hours, photos, categories and a website link on your Google Maps listing.</p><a class="ask" href="#contact">Ask for a price</a></div>
-        <div class="help"><h3>Flyers &amp; business cards</h3><p>Designs that match your site, sent as print-ready files you can take to any print shop. Menus and price lists too.</p><dl class="rates"><dt>Flyer design</dt><dd>$30</dd><dt>Business card design</dt><dd>$25</dd><dt>Both</dt><dd>$50</dd></dl><a class="ask" href="#contact">Order a design</a></div>
-        <div class="help"><h3>Social pages</h3><p>A Facebook or Instagram page set up properly, with your hours and a link to your site.</p><a class="ask" href="#contact">Ask for a price</a></div>
-        <div class="help"><h3>Updates</h3><p>New prices, holiday hours, a new service. Send me the change and I'll make it.</p><a class="ask" href="#contact">Ask for a price</a></div>
+  <section class="band-sky edge-top">
+    <div class="wrap crew">
+      <div class="crew-art reveal"><svg viewBox="0 0 600 470" role="img" aria-label="Illustration of a West Utica street with paw prints along the sidewalk"><rect width="600" height="470" fill="#DDF2FB"/><g transform="translate(0 10)"><circle cx="520" cy="48" r="34" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><rect x="14" y="60" width="136" height="300" fill="#FFD9CF" stroke="#1D1A33" stroke-width="2.5"/><rect x="8" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="32" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M53 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="90" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M111 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="10.0" y="168" width="24.0" height="34" fill="#EE5236"/><rect x="34.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="58.0" y="168" width="24.0" height="34" fill="#EE5236"/><rect x="82.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="106.0" y="168" width="24.0" height="34" fill="#EE5236"/><rect x="130.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><path d="M10.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><path d="M34.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M58.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><path d="M82.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M106.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><path d="M130.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><rect x="10" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="28" y="130" width="108" height="30" rx="6" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><text x="82.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#EE5236" letter-spacing="1">DELI</text><rect x="26" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M34 236l14 -0M34 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="102" y="226" width="36" height="134" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><rect x="108" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="131" cy="300" r="3" fill="#1D1A33"/><rect x="26" y="306" width="66" height="54" fill="#FFD9CF" stroke="#1D1A33" stroke-width="2.5"/><rect x="158" y="60" width="136" height="300" fill="#9ED8F2" stroke="#1D1A33" stroke-width="2.5"/><rect x="152" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="176" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M197 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="234" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M255 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="154.0" y="168" width="24.0" height="34" fill="#0E8A7E"/><rect x="178.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="202.0" y="168" width="24.0" height="34" fill="#0E8A7E"/><rect x="226.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="250.0" y="168" width="24.0" height="34" fill="#0E8A7E"/><rect x="274.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><path d="M154.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><path d="M178.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M202.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><path d="M226.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M250.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><path d="M274.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><rect x="154" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="172" y="130" width="108" height="30" rx="6" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><text x="226.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#FFC23D" letter-spacing="1">CUTS</text><rect x="170" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M178 236l14 -0M178 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="246" y="226" width="36" height="134" rx="4" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.5"/><rect x="252" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="275" cy="300" r="3" fill="#1D1A33"/><rect x="170" y="306" width="66" height="54" fill="#9ED8F2" stroke="#1D1A33" stroke-width="2.5"/><rect x="268" y="228" width="12" height="54" rx="6" fill="#fff" stroke="#1D1A33" stroke-width="2.2"/><path d="M268 236l12 -6M268 248l12 -6M268 260l12 -6M268 272l12 -6" stroke="#EE5236" stroke-width="3.5"/><rect x="302" y="60" width="136" height="300" fill="#C9EFD9" stroke="#1D1A33" stroke-width="2.5"/><rect x="296" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="320" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M341 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="378" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M399 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="298.0" y="168" width="24.0" height="34" fill="#6D4AA8"/><rect x="322.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="346.0" y="168" width="24.0" height="34" fill="#6D4AA8"/><rect x="370.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><rect x="394.0" y="168" width="24.0" height="34" fill="#6D4AA8"/><rect x="418.0" y="168" width="24.0" height="34" fill="#FFFFFF"/><path d="M298.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><path d="M322.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M346.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><path d="M370.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><path d="M394.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><path d="M418.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><rect x="298" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="316" y="130" width="108" height="30" rx="6" fill="#FFFFFF" stroke="#1D1A33" stroke-width="2.5"/><text x="370.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#6D4AA8" letter-spacing="1">SALON</text><rect x="314" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M322 236l14 -0M322 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="390" y="226" width="36" height="134" rx="4" fill="#6D4AA8" stroke="#1D1A33" stroke-width="2.5"/><rect x="396" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="419" cy="300" r="3" fill="#1D1A33"/><rect x="314" y="306" width="66" height="54" fill="#C9EFD9" stroke="#1D1A33" stroke-width="2.5"/><rect x="446" y="60" width="136" height="300" fill="#FFE8A8" stroke="#1D1A33" stroke-width="2.5"/><rect x="440" y="52" width="148" height="14" rx="3" fill="#1D1A33"/><rect x="464" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M485 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="522" y="78" width="42" height="30" rx="4" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M543 78v30" stroke="#1D1A33" stroke-width="2"/><rect x="442.0" y="168" width="24.0" height="34" fill="#FFC23D"/><rect x="466.0" y="168" width="24.0" height="34" fill="#1D1A33"/><rect x="490.0" y="168" width="24.0" height="34" fill="#FFC23D"/><rect x="514.0" y="168" width="24.0" height="34" fill="#1D1A33"/><rect x="538.0" y="168" width="24.0" height="34" fill="#FFC23D"/><rect x="562.0" y="168" width="24.0" height="34" fill="#1D1A33"/><path d="M442.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M466.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><path d="M490.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M514.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><path d="M538.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M562.0 202 a12.0 10.0 0 0 0 24.0 0" fill="#1D1A33" stroke="#1D1A33" stroke-width="2.5"/><rect x="442" y="168" width="144" height="34" fill="none" stroke="#1D1A33" stroke-width="2.5"/><rect x="460" y="130" width="108" height="30" rx="6" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><text x="514.0" y="151.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="17" fill="#FFFFFF" letter-spacing="1">AUTO</text><rect x="458" y="226" width="66" height="74" rx="5" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2.5"/><path d="M466 236l14 -0M466 244l24 0" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="534" y="226" width="36" height="134" rx="4" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><rect x="540" y="236" width="24" height="36" rx="3" fill="#DDF2FB" stroke="#1D1A33" stroke-width="2"/><circle cx="563" cy="300" r="3" fill="#1D1A33"/><rect x="458" y="306" width="66" height="54" fill="#FFE8A8" stroke="#1D1A33" stroke-width="2.5"/><rect x="0" y="360" width="600" height="60" fill="#E8DCC6" stroke="#1D1A33" stroke-width="2.5"/><path d="M0 384h600" stroke="#1D1A33" stroke-width="2" stroke-dasharray="2 28"/><rect x="112" y="336" width="28" height="24" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2"/><circle cx="120" cy="330" r="10" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><circle cx="133" cy="327" r="12" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><rect x="256" y="336" width="28" height="24" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2"/><circle cx="264" cy="330" r="10" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><circle cx="277" cy="327" r="12" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><rect x="400" y="336" width="28" height="24" rx="4" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2"/><circle cx="408" cy="330" r="10" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/><circle cx="421" cy="327" r="12" fill="#0E8A7E" stroke="#1D1A33" stroke-width="2.2"/></g><rect x="0" y="430" width="600" height="40" fill="#E8DCC6"/><g transform="translate(40 395) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(78 382) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(118 398) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(156 384) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(196 400) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(236 386) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(276 402) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(316 388) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(356 404) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(396 390) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(436 406) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(476 392) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(516 408) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g></svg><span class="cap" data-i18n="crew.cap">West Utica HQ</span></div>
+      <div class="stack reveal" style="--rd:.15s">
+        <span class="kicker" data-i18n="crew.k">Meet the crew</span>
+        <h2 data-i18n="crew.h">A neighbor, not an agency</h2>
+        <p data-i18n="crew.p">I live in West Utica and walk these streets every day with my two dogs, the official Web Design CNY mascots. We pass a lot of great local businesses that people can't find online. I want to fix that, at a price a small shop can afford.</p>
+        <div class="cta"><a class="btn btn-teal" href="about.html"><span data-i18n="crew.btn">More about us</span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
     </div>
   </section>
 
-  <section class="about">
-    <div class="wrap">
-      <div class="stack">
-        <div class="eyebrow">Who's building it</div>
-        <h2>A neighbor, not an agency</h2>
-      </div>
-      <div class="stack">
-        <p>I live in West Utica and I walk past a lot of great local businesses that people can't find online. A lot of them have a Facebook page or nothing at all, and no website button on their Google listing.</p>
-        <p>I keep it simple: a fair flat price, a site you own, and a real person you can reach when something needs changing.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Questions owners ask</div>
-        <h2>Straight answers</h2>
-      </div>
-      <div class="qs">
-        <div><h3>Is there a monthly fee?</h3><p>No. You pay $200 once. The only other cost is your web address, about $10–20 a year, paid to the company that registers it.</p></div>
-        <div><h3>Who owns the site?</h3><p>You do. The web address is registered in your name, so it stays yours no matter what.</p></div>
-        <div><h3>I already have a Facebook page.</h3><p>Keep it. Your site links to it. A website shows up on Google for people who don't use Facebook, and it gives your Google listing a website button.</p></div>
-        <div><h3>What do you need from me?</h3><p>Your menu or list of services, prices, a few photos and how you take orders or bookings. Photos from your phone are fine.</p></div>
-        <div><h3>How long does it take?</h3><p>Usually about a week from when I get your information, depending on how quickly you can review it.</p></div>
-        <div><h3>Can I change things later?</h3><p>Yes. Send me what to change. Small fixes in the first month are free; after that I'll tell you the price before I do anything.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <div class="stack">
-        <h2>Want to see yours?</h2>
-        <p>Email me your business name. I'll make a free sample homepage and send it to you, usually within a couple of days.</p>
-      </div>
-      <div class="card-c">
-        <div class="row"><span class="k">Email</span><a class="v" href="mailto:david@webdesigncny.com?subject=Free%20sample%20for%20my%20business">david@webdesigncny.com</a></div>
-        <div class="row"><span class="k">Based in</span><span class="v" style="font-size:20px">West Utica, NY</span></div>
-      </div>
+  <section class="bigcta band-sun edge-top">
+    <div class="wrap reveal">
+      <span class="hand" style="color:var(--ink)" data-i18n="cta.hand">no strings attached</span>
+      <h2 data-i18n="cta.h">Let's get your shop online.</h2>
+      <p data-i18n="cta.p">Tell me your business name. I'll make a free sample homepage and send it to you, usually within a couple of days.</p>
+      <div class="cta" style="justify-content:center"><a class="btn btn-red" href="contact.html"><span data-i18n="c.cta">Get my free sample</span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn" href="mailto:david@webdesigncny.com?subject=Free%20sample%20for%20my%20business">david@webdesigncny.com</a></div>
     </div>
   </section>
 </main>
 
 <footer>
+  <svg class="town" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 90V62h60V40h40v-14h50v14h30v22h40V30l30-20 30 20v32h50V44h70v18h30V20h16V8h12v12h16v42h60V36h90v26h40V48l30-18 30 18v14h60V28h80v34h40V44h50v18h60V36h40v-10h30v10h20v26h80V40h60v22h30v28z"/></svg>
   <div class="wrap">
-    <span>© 2026 Web Design CNY · webdesigncny.com</span>
-    <span>Web design &amp; small business help · Utica, NY</span>
+    <div class="cols">
+      <div>
+        <a class="logo" href="./" aria-label="Web Design CNY, home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="12" fill="#FFC23D" stroke="#1D1A33" stroke-width="2.5"/><path d="M6 17h36l-2 6H8z" fill="#EE5236" stroke="#1D1A33" stroke-width="2.2" stroke-linejoin="round"/><path d="M8 23c2 3 6 3 8 0 2 3 6 3 8 0 2 3 6 3 8 0 2 3 6 3 8 0" fill="#fff" stroke="#1D1A33" stroke-width="2.2" stroke-linejoin="round"/><rect x="11" y="28" width="26" height="13" rx="2.5" fill="#fff" stroke="#1D1A33" stroke-width="2.2"/><path d="M15 34.5h9M15 37.5h6" stroke="#0E8A7E" stroke-width="2.2" stroke-linecap="round"/><circle cx="31" cy="35" r="2.6" fill="#EE5236"/><path d="M14 11h20" stroke="#1D1A33" stroke-width="2.4" stroke-linecap="round"/></svg><span class="w"><b>Web Design CNY</b><small data-i18n="c.tag">your neighborhood web guy</small></span></a>
+        <p class="areas" data-i18n="f.areas">Websites and graphic design for small shops and side hustles in Utica, West Utica, East Utica, North Utica, New Hartford, Whitesboro, Yorkville, New York Mills, Rome and all of Oneida County.</p>
+      </div>
+      <div>
+        <h3 data-i18n="f.pages">Pages</h3>
+        <ul>
+          <li><a href="./" data-i18n="n.home">Home</a></li>
+          <li><a href="services.html" data-i18n="n.services">Services &amp; prices</a></li>
+          <li><a href="about.html" data-i18n="n.about">About</a></li>
+          <li><a href="contact.html" data-i18n="n.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="f.say">Say hi</h3>
+        <ul>
+          <li><a href="mailto:david@webdesigncny.com?subject=Free%20sample%20for%20my%20business">david@webdesigncny.com</a></li>
+          <li data-i18n="f.based">Based in Utica, NY</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal"><span>© 2026 Web Design CNY</span><span data-i18n="f.made">Made in Utica, with help from two good dogs.</span></div>
   </div>
 </footer>
 
+<div class="dock">
+  <a class="btn btn-red" href="contact.html" data-i18n="c.cta">Get my free sample</a>
+  <a class="btn btn-email" href="mailto:david@webdesigncny.com?subject=Free%20sample%20for%20my%20business" aria-label="Email David" data-i18n="c.email">Email</a>
+</div>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>
