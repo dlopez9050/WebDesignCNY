@@ -139,6 +139,13 @@ section{padding-block:72px}
 .rates dt{margin:0;color:var(--ink)}
 .rates dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
 
+/* packages */
+.pk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:start}
+.pk::before,.pk::after{background:radial-gradient(circle at 7px 0,var(--paper) 6px,transparent 6.5px) repeat-x;background-size:14px 10px}
+.pk .who{font-family:var(--body);font-size:16px;color:var(--muted);margin:0 0 10px;line-height:1.45}
+.pk h3{font-family:var(--display);font-size:26px;font-weight:900;font-stretch:85%;margin:0 0 4px;color:var(--ink)}
+.pk .was{text-decoration:line-through;color:var(--muted);font-weight:400}
+
 /* about */
 .about .wrap{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:48px;align-items:start}
 .about p{font-size:19px;max-width:34em}
@@ -167,6 +174,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media (max-width:900px){
   .hero .wrap,.price .wrap,.about .wrap,.contact .wrap{grid-template-columns:minmax(0,1fr)}
   .steps,.help-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pk-grid{grid-template-columns:minmax(0,1fr)}
   .strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
   .phone{max-width:260px}
 }
@@ -194,6 +202,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <nav class="nav" aria-label="Main">
       <a href="#how">How it works</a>
       <a href="#price">Price</a>
+      <a href="#packages">Packages</a>
       <a href="#help">More help</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -278,6 +287,41 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <div class="t-total"><span>Total to me</span><span class="big">$200</span></div>
         <div class="t-foot">Half to start, half when you approve the finished site. The free sample costs nothing.</div>
       </div>
+    </div>
+  </section>
+
+  <section id="packages">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Packages</div>
+        <h2>Get set up all at once and pay less</h2>
+        <p style="color:var(--muted)">One price, paid once: half to start, half when you approve. Printing isn't included; you pay the print shop directly. Your web address is about $10–20 a year, in your name.</p>
+      </div>
+      <div class="pk-grid">
+        <div class="ticket pk" aria-label="Hustler package">
+          <div class="t-head"><span>Package</span><b>Hustler</b></div>
+          <h3>Starting a side hustle?</h3>
+          <p class="who">For braiders, nail techs, cleaners, handymen, home bakers, tutors and anyone who's good at what they do and wants to look official.</p>
+          <div class="t-row"><span class="lbl">One-page "hire me" site<span class="note">Services, prices, photos and a text or book button</span></span><span class="dots"></span><span class="amt">$100</span></div>
+          <div class="t-row"><span class="lbl">Google profile setup<span class="note">Your home address stays hidden</span></span><span class="dots"></span><span class="amt">$50</span></div>
+          <div class="t-row"><span class="lbl">Business card design</span><span class="dots"></span><span class="amt">$25</span></div>
+          <div class="t-row"><span class="lbl">Flyer design</span><span class="dots"></span><span class="amt">$30</span></div>
+          <div class="t-total"><span>Package <span class="was">$205</span></span><span class="big">$150</span></div>
+          <div class="t-foot">You save $55. Designs come as print-ready files.</div>
+        </div>
+        <div class="ticket pk" aria-label="Entrepreneur package">
+          <div class="t-head"><span>Package</span><b>Entrepreneur</b></div>
+          <h3>Running a shop?</h3>
+          <p class="who">For delis, cafes, barbershops, auto shops and corner stores that want new customers to find them, trust them and walk in.</p>
+          <div class="t-row"><span class="lbl">Small business website</span><span class="dots"></span><span class="amt">$200</span></div>
+          <div class="t-row"><span class="lbl">Google listing cleanup</span><span class="dots"></span><span class="amt">$75</span></div>
+          <div class="t-row"><span class="lbl">Review QR card design<span class="note">Counter card that asks for Google reviews</span></span><span class="dots"></span><span class="amt">$35</span></div>
+          <div class="t-row"><span class="lbl">Flyer + business card design</span><span class="dots"></span><span class="amt">$50</span></div>
+          <div class="t-total"><span>Package <span class="was">$360</span></span><span class="big">$300</span></div>
+          <div class="t-foot">You save $60. No monthly fee.</div>
+        </div>
+      </div>
+      <p style="margin-top:28px"><a class="btn btn-primary" href="#contact">Ask about a package</a></p>
     </div>
   </section>
 
