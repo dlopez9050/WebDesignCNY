@@ -333,7 +333,7 @@ def home():
 
   <section class="band-sky edge-top">
     <div class="wrap crew">
-      <div class="crew-art reveal">{CREW}<span class="cap" {tk("crew.cap","David &amp; the crew","David y su equipo")}>David &amp; the crew</span></div>
+      <div class="crew-art reveal">{CREW}<span class="cap" {tk("crew.cap","West Utica HQ","Sede en West Utica")}>West Utica HQ</span></div>
       <div class="stack reveal" style="--rd:.15s">
         <span class="kicker" {tk("crew.k","Meet the crew","Conoce al equipo")}>Meet the crew</span>
         <h2 {tk("crew.h","A neighbor, not an agency","Un vecino, no una agencia")}>A neighbor, not an agency</h2>
@@ -465,10 +465,10 @@ def about():
     <div class="wrap">
       <div class="stack">
         <span class="kicker" {tk("ab.k","About","Quién soy")}>About</span>
-        <h1 {tk("ab.h1","Hi! I'm David. These are my <span class=\"squiggle\">coworkers</span>.","¡Hola! Soy David. Estos son mis <span class=\"squiggle\">compañeros</span>.")}>Hi! I'm David. These are my <span class="squiggle">coworkers{SQUIG}</span>.</h1>
+        <h1 {tk("ab.h1","Hi! I'm David. My dogs are my <span class=\"squiggle\">coworkers</span>.","¡Hola! Soy David. Mis perros son mis <span class=\"squiggle\">compañeros</span>.")}>Hi! I'm David. My dogs are my <span class="squiggle">coworkers{SQUIG}</span>.</h1>
         <p class="lede" {tk("ab.lede","Web Design CNY is me and my two dogs, working out of West Utica. I make websites and graphics for the small shops and side hustles we walk past every day.","Web Design CNY somos yo y mis dos perros, desde West Utica. Hago sitios web y diseños para los pequeños negocios y emprendedores por los que pasamos todos los días.")}>Web Design CNY is me and my two dogs, working out of West Utica. I make websites and graphics for the small shops and side hustles we walk past every day.</p>
       </div>
-      <div class="crew-art">{CREW}<span class="cap" {tk("crew.cap","David &amp; the crew","David y su equipo")}>David &amp; the crew</span></div>
+      <div class="crew-art">{CREW}<span class="cap" {tk("crew.cap","West Utica HQ","Sede en West Utica")}>West Utica HQ</span></div>
     </div>
   </section>
   <div class="awning-stripe" aria-hidden="true"></div>

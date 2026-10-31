@@ -88,65 +88,7 @@ SVC_PRINT = '''<svg viewBox="0 0 240 130" width="100%" height="100%" aria-hidden
 SVC_GOOGLE = '''<svg viewBox="0 0 240 130" width="100%" height="100%" aria-hidden="true"><rect width="240" height="130" fill="#C9EFD9"/><path d="M0 92h240M70 0v130M170 0v130" stroke="#fff" stroke-width="10"/><path d="M0 40 L240 70" stroke="#fff" stroke-width="7"/><path d="M120 16c-17 0-30 13-30 29 0 22 30 52 30 52s30-30 30-52c0-16-13-29-30-29z" fill="#EE5236" stroke="#1D1A33" stroke-width="2.5"/><circle cx="120" cy="45" r="11" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><rect x="150" y="80" width="78" height="34" rx="17" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><path d="M164 97l6 6 12-12" stroke="#0E8A7E" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="188" y="92" width="30" height="9" rx="4.5" fill="#1D1A33"/></svg>'''
 
 # Crew placeholder: a cartoon guy (no face details) walking two dogs. To be replaced once David sends dog photos.
-CREW = '''<svg viewBox="0 0 560 420" role="img" aria-label="Cartoon of David walking his two dogs down a Utica street"><rect width="560" height="420" fill="#DDF2FB"/><circle cx="470" cy="76" r="40" fill="#FFC23D" stroke="#1D1A33" stroke-width="3"/>
-<g opacity=".9"><rect x="20" y="120" width="110" height="230" fill="#FFD9CF" stroke="#1D1A33" stroke-width="3"/><rect x="38" y="140" width="30" height="34" rx="4" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><rect x="82" y="140" width="30" height="34" rx="4" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><rect x="14" y="110" width="122" height="14" rx="3" fill="#1D1A33"/></g>
-<g opacity=".9"><rect x="400" y="160" width="140" height="190" fill="#C9EFD9" stroke="#1D1A33" stroke-width="3"/><rect x="394" y="150" width="152" height="14" rx="3" fill="#1D1A33"/><rect x="420" y="186" width="40" height="36" rx="4" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/><rect x="478" y="186" width="40" height="36" rx="4" fill="#fff" stroke="#1D1A33" stroke-width="2.5"/></g>
-<rect x="0" y="350" width="560" height="70" fill="#E8DCC6" stroke="#1D1A33" stroke-width="3"/>
-<!-- person: David. Bald, salt-and-pepper beard, big guy, yellow Web Design CNY hoodie, black pants, brown eyes -->
-<g stroke="#1D1A33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M222 270l-8 84M276 270l10 84" stroke-width="30" stroke="#1D1A33"/>
-<path d="M200 358h30M272 358h32" stroke-width="11"/>
-<path d="M188 186c0-34 28-52 61-52s61 18 61 52c16 26 18 60 8 90-24 12-114 12-138 0-10-30-8-64 8-90z" fill="#FFC23D"/>
-<path d="M214 250c22 8 50 8 70 0" fill="none" stroke-width="2.5"/>
-<path d="M214 250h70v14c-22 6-48 6-70 0z" fill="#F0AE22" stroke-width="2.5"/>
-<rect x="218" y="196" width="62" height="30" rx="6" fill="#1D1A33" stroke="none"/>
-<text x="249" y="208" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="9.5" fill="#FFC23D" stroke="none">WEB DESIGN</text>
-<text x="249" y="221" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="11" fill="#fff" stroke="none">CNY</text>
-<path d="M232 142l8 18M266 142l-8 18" stroke-width="2.5"/>
-<path d="M310 190c12 18 14 34 12 48" stroke-width="20" stroke="#FFC23D"/><path d="M310 190c12 18 14 34 12 48" fill="none" stroke-width="3"/>
-<path d="M188 190c-12 18-14 36-10 54" stroke-width="20" stroke="#FFC23D"/><path d="M188 190c-12 18-14 36-10 54" fill="none" stroke-width="3"/>
-<circle cx="322" cy="240" r="9" fill="#E8B48E"/><circle cx="178" cy="246" r="9" fill="#E8B48E"/>
-<ellipse cx="249" cy="102" rx="33" ry="36" fill="#E8B48E"/>
-<ellipse cx="215" cy="106" rx="6" ry="9" fill="#E8B48E"/><ellipse cx="283" cy="106" rx="6" ry="9" fill="#E8B48E"/>
-<path d="M240 74c4-3 12-3 16 0" fill="none" stroke="#fff" stroke-width="3" opacity=".7"/>
-<path d="M217 108c0 30 14 46 32 46s32-16 32-46c-6 8-14 12-20 12h-24c-6 0-14-4-20-12z" fill="#3A2E2A"/>
-<path d="M228 128l4 10M240 136l2 10M262 132l-2 10M272 124l-4 8M250 140v8" stroke="#C9C3DD" stroke-width="2.2"/>
-<path d="M238 124c6 5 16 5 22 0" fill="none" stroke="#fff" stroke-width="2.5"/>
-<path d="M226 92l14 4M272 92l-14 4" stroke-width="4"/>
-<circle cx="236" cy="103" r="4" fill="#6B3E1F" stroke-width="2"/><circle cx="262" cy="103" r="4" fill="#6B3E1F" stroke-width="2"/>
-<path d="M249 104v8l-4 3" fill="none" stroke-width="2.5"/>
-</g>
-<!-- leashes -->
-<path d="M318 244C340 270 360 280 382 292" stroke="#0E8A7E" stroke-width="3.5" fill="none"/>
-<path d="M184 248C166 270 150 285 130 300" stroke="#6D4AA8" stroke-width="3.5" fill="none"/>
-<!-- big dog -->
-<g stroke="#1D1A33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M352 312c0-20 20-30 50-30h40c18 0 26 12 26 26v14h-116z" fill="#B8743E"/>
-<path d="M362 318v36M384 318v36M432 318v36M452 318v36" stroke-width="11" stroke="#B8743E"/><path d="M362 318v36M384 318v36M432 318v36M452 318v36" stroke-width="3" fill="none"/>
-<path d="M466 290c14-8 22-24 20-36" fill="none" stroke-width="7" stroke="#B8743E"/><path d="M466 290c14-8 22-24 20-36" fill="none"/>
-<circle cx="372" cy="270" r="26" fill="#B8743E"/>
-<path d="M350 248c-8 6-10 22-4 30l12-14z" fill="#7A4A25"/>
-<ellipse cx="352" cy="282" rx="12" ry="9" fill="#E8C49A"/>
-<circle cx="344" cy="279" r="4" fill="#1D1A33"/>
-<circle cx="370" cy="264" r="3" fill="#1D1A33" stroke="none"/>
-<path d="M360 294c4 8 0 14-4 14" fill="#EE5236" stroke-width="2.5"/>
-<rect x="378" y="286" width="16" height="7" rx="3" fill="#0E8A7E" stroke-width="2.5"/>
-</g>
-<!-- small dog -->
-<g stroke="#1D1A33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M70 322c0-14 12-20 30-20h22c12 0 18 8 18 18v8h-70z" fill="#fff"/>
-<circle cx="98" cy="314" r="7" fill="#1D1A33" stroke="none"/>
-<path d="M78 326v26M94 326v26M116 326v26M130 326v26" stroke-width="9" stroke="#fff"/><path d="M78 326v26M94 326v26M116 326v26M130 326v26" stroke-width="3" fill="none"/>
-<path d="M70 314c-10-4-16-14-14-24" fill="none" stroke-width="6" stroke="#fff"/><path d="M70 314c-10-4-16-14-14-24" fill="none"/>
-<circle cx="146" cy="294" r="20" fill="#fff"/>
-<path d="M140 276c-4-12 4-20 10-20l6 18z" fill="#1D1A33"/>
-<ellipse cx="162" cy="302" rx="9" ry="7" fill="#F1E3D3"/>
-<circle cx="168" cy="300" r="3.5" fill="#1D1A33"/>
-<circle cx="150" cy="290" r="2.6" fill="#1D1A33" stroke="none"/>
-<rect x="128" y="306" width="14" height="6" rx="3" fill="#6D4AA8" stroke-width="2.5"/>
-</g>
-<path d="M300 60c10-10 24-10 30 0M332 44c6-6 14-6 18 0" stroke="#1D1A33" stroke-width="3" fill="none" stroke-linecap="round"/>
-</svg>'''
+CREW = ('<svg viewBox="0 0 600 470" role="img" aria-label="Illustration of a West Utica street with paw prints along the sidewalk"><rect width="600" height="470" fill="#DDF2FB"/><g transform="translate(0 10)">' + STREET.replace('<svg class="street" viewBox="0 0 600 420" role="img" aria-label="Illustration of a Utica main street with a deli, a barbershop, a salon and an auto shop">','').replace('</svg>','') + '</g><rect x="0" y="430" width="600" height="40" fill="#E8DCC6"/><g transform="translate(40 395) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(78 382) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(118 398) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(156 384) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(196 400) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(236 386) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(276 402) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(316 388) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(356 404) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(396 390) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(436 406) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(476 392) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g><g transform="translate(516 408) rotate(80)" fill="#1D1A33" opacity=".75"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="3"/><circle cx="-2" cy="-8" r="3"/><circle cx="3" cy="-8" r="3"/><circle cx="8" cy="-4" r="3"/></g></svg>')
 
 # Little town skyline for the footer top edge (filled with the footer ink, sitting on cream)
 TOWN = '''<svg class="town" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 90V62h60V40h40v-14h50v14h30v22h40V30l30-20 30 20v32h50V44h70v18h30V20h16V8h12v12h16v42h60V36h90v26h40V48l30-18 30 18v14h60V28h80v34h40V44h50v18h60V36h40v-10h30v10h20v26h80V40h60v22h30v28z"/></svg>'''
