@@ -231,15 +231,15 @@ def home():
           <p {tk(k+".p",p_en,p_es)}>{p_en}</p>
           <div class="from"><span {tk(k+".f",price_en,price_es)}>{price_en}</span><a href="services.html" {tk("home.svc.more","See prices","Ver precios")}>See prices</a></div>
         </div>'''
-    return head("index", "Web Design CNY · Your website is your digital storefront · Utica, NY",
+    return head("index", "Web Design CNY · $200 websites for small businesses in Utica, NY",
                 "Your website is your digital storefront. Friendly, affordable websites and graphic design for small shops and side hustles in Utica and Central New York. Free sample first, flat prices, no monthly fee.",
                 '<script type="application/ld+json">' + json.dumps(SCHEMA) + '</script>') + header("index") + f'''
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
         <span class="hand-note" {tk("home.hand","Hey neighbor!","¡Hola, vecino!")}>Hey neighbor!</span>
-        <h1 {tk("home.h1","Your website is your <span class=\"accent\">digital storefront.</span>","Tu sitio web es tu <span class=\"accent\">tienda digital.</span>")}>Your website is your <span class="accent">digital storefront.</span></h1>
-        <p class="lede" {tk("home.lede","Before customers walk through your door, they check you out on their phone. I'm David, from West Utica, and I build bright, simple websites, flyers and cards that make your digital storefront as welcoming as the real one. I'll make you a free sample first, so you see it before you spend a dollar.","Antes de entrar por tu puerta, los clientes te buscan en el celular. Soy David, de West Utica, y hago sitios web, volantes y tarjetas sencillos y llamativos para que tu tienda digital sea tan acogedora como la de verdad. Primero te hago una muestra gratis, para que la veas antes de gastar un dólar.")}>Before customers walk through your door, they check you out on their phone. I'm David, from West Utica, and I build bright, simple websites, flyers and cards that make your digital storefront as welcoming as the real one. I'll make you a free sample first, so you see it before you spend a dollar.</p>
+        <h1 {tk("home.h1","Websites for small CNY shops. <span class=\"accent\">$200, one time.</span>","Sitios web para pequeños negocios de CNY. <span class=\"accent\">$200, un solo pago.</span>")}>Websites for small CNY shops. <span class="accent">$200, one time.</span></h1>
+        <p class="lede" {tk("home.lede2","I'm David, from West Utica. I build bright, simple websites, flyers and cards for delis, barbers, salons, auto shops and side hustles. I'll make you a free sample first, so you see it before you spend a dollar. No monthly fee, and you own it.","Soy David, de West Utica. Hago sitios web, volantes y tarjetas sencillos y llamativos para delis, barberías, salones, talleres y emprendedores. Primero te hago una muestra gratis, para que la veas antes de gastar un dólar. Sin pago mensual, y es tuyo.")}>I'm David, from West Utica. I build bright, simple websites, flyers and cards for delis, barbers, salons, auto shops and side hustles. I'll make you a free sample first, so you see it before you spend a dollar. No monthly fee, and you own it.</p>
         <div class="cta">
           <a class="btn btn-red" href="contact.html"><span {tk("c.cta","Get my free sample","Quiero mi muestra gratis")}>Get my free sample</span>{ARROW}</a>
           <a class="btn" href="services.html" {tk("home.seeprices","See prices","Ver precios")}>See prices</a>
@@ -293,8 +293,8 @@ def home():
     <div class="wrap why-grid">
       <div class="stack reveal">
         <span class="kicker" {tk("why.k","Why it matters","Por qué importa")}>Why it matters</span>
-        <h2 {tk("why.h","When someone searches \"near me,\" who do they pick?","Cuando alguien busca \"cerca de mí\", ¿a quién escoge?")}>When someone searches "near me," who do they pick?</h2>
-        <p class="lede" {tk("why.p","New customers look you up on their phone before they walk in. If your listing has no website, they see less about you, and they often tap the shop next door instead.","Los clientes nuevos te buscan en el celular antes de llegar. Si tu perfil no tiene sitio web, ven menos de ti y muchas veces escogen el negocio de al lado.")}>New customers look you up on their phone before they walk in. If your listing has no website, they see less about you, and they often tap the shop next door instead.</p>
+        <h2 {tk("why.h2","Your website is your <span class=\"hl\">digital storefront.</span>","Tu sitio web es tu <span class=\"hl\">tienda digital.</span>")}>Your website is your <span class="hl">digital storefront.</span></h2>
+        <p class="lede" {tk("why.p2","When someone searches \"near me,\" your website is the first window they look through. If your listing has no website, they see less about you, and they often tap the shop next door instead.","Cuando alguien busca \"cerca de mí\", tu sitio web es la primera vidriera que miran. Si tu perfil no tiene sitio web, ven menos de ti y muchas veces escogen el negocio de al lado.")}>When someone searches "near me," your website is the first window they look through. If your listing has no website, they see less about you, and they often tap the shop next door instead.</p>
         {ticks([("why.t1","Your menu, prices and hours, right where people look","Tu menú, precios y horario, justo donde la gente busca"),("why.t2","A website button on your Google listing","Un botón de sitio web en tu perfil de Google"),("why.t3","One link for your flyers, cards, Facebook and Instagram","Un solo enlace para tus volantes, tarjetas, Facebook e Instagram")])}
       </div>
       <div class="serp reveal" style="--rd:.15s" role="img" aria-label="Illustration of two search results: one shop has a website, the other does not">
