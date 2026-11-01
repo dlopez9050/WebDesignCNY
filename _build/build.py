@@ -110,7 +110,7 @@ def bigcta():
   <section class="bigcta band-sun edge-top">
     <div class="wrap reveal">
       <span class="hand" style="color:var(--ink)" {tk("cta.hand","no strings attached","sin compromiso")}>no strings attached</span>
-      <h2 {tk("cta.h","Let's get your shop online.","Pongamos tu negocio en internet.")}>Let's get your shop online.</h2>
+      <h2 {tk("cta.h","Let's open your digital storefront.","Abramos tu tienda digital.")}>Let's open your digital storefront.</h2>
       <p {tk("cta.p","Tell me your business name. I'll make a free sample homepage and send it to you, usually within a couple of days.","Dime el nombre de tu negocio. Te hago una página de muestra gratis y te la envío, normalmente en un par de días.")}>Tell me your business name. I'll make a free sample homepage and send it to you, usually within a couple of days.</p>
       <div class="cta" style="justify-content:center"><a class="btn btn-red" href="contact.html"><span {tk("c.cta","Get my free sample","Quiero mi muestra gratis")}>Get my free sample</span>{ARROW}</a><a class="btn" href="{MAIL}">david@webdesigncny.com</a></div>
     </div>
@@ -231,15 +231,15 @@ def home():
           <p {tk(k+".p",p_en,p_es)}>{p_en}</p>
           <div class="from"><span {tk(k+".f",price_en,price_es)}>{price_en}</span><a href="services.html" {tk("home.svc.more","See prices","Ver precios")}>See prices</a></div>
         </div>'''
-    return head("index", "Web Design CNY · Friendly websites for small businesses in Utica, NY",
-                "Friendly, affordable websites and graphic design for small shops and side hustles in Utica and Central New York. Free sample first, flat prices, no monthly fee.",
+    return head("index", "Web Design CNY · Your website is your digital storefront · Utica, NY",
+                "Your website is your digital storefront. Friendly, affordable websites and graphic design for small shops and side hustles in Utica and Central New York. Free sample first, flat prices, no monthly fee.",
                 '<script type="application/ld+json">' + json.dumps(SCHEMA) + '</script>') + header("index") + f'''
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
         <span class="hand-note" {tk("home.hand","Hey neighbor!","¡Hola, vecino!")}>Hey neighbor!</span>
-        <h1 {tk("home.h1","Your shop deserves a <span class=\"accent\">real website.</span>","Tu negocio merece un <span class=\"accent\">sitio web de verdad.</span>")}>Your shop deserves a <span class="accent">real website.</span></h1>
-        <p class="lede" {tk("home.lede","I'm David, from West Utica. I design bright, simple websites, flyers and cards for the delis, barbers, salons, auto shops and side hustles that make this town great. I'll make you a free sample first, so you see it before you spend a dollar.","Soy David, de West Utica. Diseño sitios web, volantes y tarjetas sencillos y llamativos para los delis, barberías, salones, talleres y emprendedores que hacen grande a esta ciudad. Primero te hago una muestra gratis, para que la veas antes de gastar un dólar.")}>I'm David, from West Utica. I design bright, simple websites, flyers and cards for the delis, barbers, salons, auto shops and side hustles that make this town great. I'll make you a free sample first, so you see it before you spend a dollar.</p>
+        <h1 {tk("home.h1","Your website is your <span class=\"accent\">digital storefront.</span>","Tu sitio web es tu <span class=\"accent\">tienda digital.</span>")}>Your website is your <span class="accent">digital storefront.</span></h1>
+        <p class="lede" {tk("home.lede","Before customers walk through your door, they check you out on their phone. I'm David, from West Utica, and I build bright, simple websites, flyers and cards that make your digital storefront as welcoming as the real one. I'll make you a free sample first, so you see it before you spend a dollar.","Antes de entrar por tu puerta, los clientes te buscan en el celular. Soy David, de West Utica, y hago sitios web, volantes y tarjetas sencillos y llamativos para que tu tienda digital sea tan acogedora como la de verdad. Primero te hago una muestra gratis, para que la veas antes de gastar un dólar.")}>Before customers walk through your door, they check you out on their phone. I'm David, from West Utica, and I build bright, simple websites, flyers and cards that make your digital storefront as welcoming as the real one. I'll make you a free sample first, so you see it before you spend a dollar.</p>
         <div class="cta">
           <a class="btn btn-red" href="contact.html"><span {tk("c.cta","Get my free sample","Quiero mi muestra gratis")}>Get my free sample</span>{ARROW}</a>
           <a class="btn" href="services.html" {tk("home.seeprices","See prices","Ver precios")}>See prices</a>

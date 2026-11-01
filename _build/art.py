@@ -75,7 +75,7 @@ def sticker(name, style):
 
 HERO_STICKERS = "".join([
     sticker("palette", "top:-7%;left:-5%;--rot:-10deg;--dy:-160px;--spin:-40deg;--d:0s"),
-    sticker("star",    "top:-6%;right:-3%;--rot:8deg;--dy:-200px;--spin:90deg;--d:.7s"),
+    sticker("open",    "top:-9%;right:-4%;--rot:8deg;--dy:-200px;--spin:90deg;--d:.7s"),
     sticker("cursor",  "bottom:-4%;right:4%;--rot:-12deg;--dy:-240px;--spin:-30deg;--d:1.3s"),
 ])
 
